@@ -1,1 +1,20 @@
-本の一覧と本の登録
+<h1>Books</h1>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  
+  <% @books.each do |book| %>
+  <tr>
+    <td><%= book.title %></td>
+    <td><%= book.body %></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <% end %>
+</table>
